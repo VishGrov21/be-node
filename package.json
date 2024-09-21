@@ -1,0 +1,31 @@
+{
+  "name": "be-event-shuffle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "pm2 start ./src/server.ts --watch --interpreter ts-node --name dev-app --no-daemon",
+    "stop:dev": "pm2 stop dev-app",
+    "start:prod": "tsc && pm2 start dist/server.js --name prod-app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.6.3",
+    "morgan": "^1.10.0",
+    "pm2": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.5.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
