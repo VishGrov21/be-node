@@ -3,7 +3,11 @@
 ## Overview
 
 **BE-Event-Shuffle** is built using **Node.js**, **Express**, and **MongoDB**, with **TypeScript** providing type safety.
+
+
 This project aims to maintain a modular, scalable structure that separates concerns across various layers such as controllers, services, routers, and models.
+
+
 A **Monolithic** architecture is used as its easy to maintain for simple backend service.
 
 ## Project Structure Philosophy
